@@ -11,47 +11,40 @@ interface PolaroidItem {
 }
 
 export default function PhotoGallery() {
-  // Real generated Ghibli images, with local uploads added dynamically and saved to localStorage
+  // Real memory images from ImgBB, with local uploads added dynamically and saved to localStorage
   const [polaroids, setPolaroids] = useState<PolaroidItem[]>(() => {
     const defaultItems = [
       {
-        id: "collage",
-        imageSrc: "/src/assets/images/annisa_collage_1784361382331.jpg",
+        id: "stiker-kiri",
+        imageSrc: "https://i.ibb.co.com/ycz954z2/stiker-kiri.jpg",
         caption: "Senyum Manismu ✨",
         date: "Semangat Selalu!",
         rotation: -4,
       },
       {
-        id: "nurse",
-        imageSrc: "/src/assets/images/annisa_nurse_1784361403555.jpg",
-        caption: "Masa Depan Cerah 🏥",
-        date: "Perawat Hebat",
+        id: "stiker-kanan",
+        imageSrc: "https://i.ibb.co.com/HpxWB4tq/stiker-kanan.jpg",
+        caption: "Wajah Ceria 🌸",
+        date: "Hari-Hari Indah",
         rotation: 3,
       },
       {
-        id: "cafe",
-        imageSrc: "/src/assets/images/annisa_cafe_1784361420691.jpg",
-        caption: "Saat-saat Tenang ☕",
-        date: "Kopi & Cerita",
-        rotation: -2,
-      },
-      {
-        id: "study",
-        imageSrc: "/src/assets/images/cozy_night_study_1784354215235.jpg",
-        caption: "Cozy Study Corner ✨",
-        date: "Midnight Coffee",
-        rotation: 4,
-      },
-      {
-        id: "fireflies",
-        imageSrc: "/src/assets/images/path_of_fireflies_1784354228528.jpg",
-        caption: "Jalan Penuh Harapan 🌙",
-        date: "Believe In Yourself",
+        id: "rs-jiwa",
+        imageSrc: "https://i.ibb.co.com/7JXHvVSS/Whats-App-Image-2026-07-18-at-13-22-19-1.jpg",
+        caption: "Perawat Hebat 🏥",
+        date: "Masa Depan Cerah",
         rotation: -3,
+      },
+      {
+        id: "pribadi",
+        imageSrc: "https://i.ibb.co.com/WNBH7G25/Whats-App-Image-2026-07-18-at-13-22-19.jpg",
+        caption: "Saat-saat Teduh ✨",
+        date: "Kopi & Cerita",
+        rotation: 4,
       },
     ];
 
-    const saved = localStorage.getItem("annisa_memories_v2");
+    const saved = localStorage.getItem("annisa_memories_v4");
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -63,7 +56,7 @@ export default function PhotoGallery() {
   });
 
   useEffect(() => {
-    localStorage.setItem("annisa_memories_v2", JSON.stringify(polaroids));
+    localStorage.setItem("annisa_memories_v4", JSON.stringify(polaroids));
   }, [polaroids]);
 
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -128,7 +121,7 @@ export default function PhotoGallery() {
           Galeri Semangat & Memori
         </h3>
         <p className="font-sans text-sm text-slate-300">
-          Beberapa visualisasi menenangkan khas Studio Ghibli. Kamu juga bisa memasukkan foto belajarmu, catatan penting, atau memorimu sendiri ke dalam galeri ini.
+          Galeri berisi foto-foto penuh memori indah dan semangat untuk perjalanan hebatmu ke depan. Kamu juga bisa memasukkan fotomu sendiri ke dalam galeri ini.
         </p>
       </div>
 
