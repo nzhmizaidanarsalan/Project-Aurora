@@ -385,10 +385,10 @@ export default function LastConstellation() {
                 className="space-y-2"
               >
                 <p className="text-pink-300 font-serif font-medium text-lg tracking-wider">
-                  Aku Selalu disini, Untuk kamu. ❤️
+                  Aku Selalu disini, Untuk kamu.
                 </p>
                 <p className="text-slate-300 font-serif font-light text-base">
-                  Aku akan tetap ada di sini. ❤️
+                  Aku akan tetap ada di sini.
                 </p>
               </motion.div>
 

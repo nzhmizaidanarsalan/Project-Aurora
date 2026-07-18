@@ -116,7 +116,7 @@ export default function ApologyScene({ isForgiven, setIsForgiven }: ApologyScene
 
             <div className="space-y-4">
               <h4 className="font-serif text-xl md:text-2xl text-[#FFD7E8] font-medium leading-relaxed">
-                Alhamdulillah, Makasih Banyak ya! ❤️
+                Alhamdulillah, Makasih Banyak ya!
               </h4>
               
               <div className="font-sans text-base md:text-lg text-slate-200 font-light leading-relaxed space-y-4 max-w-lg mx-auto">

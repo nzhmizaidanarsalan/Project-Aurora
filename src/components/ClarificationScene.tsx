@@ -23,7 +23,7 @@ const LINES: ClarificationLine[] = [
   { text: "Ke BTCLS.", duration: 2000 },
   { text: "Ke OSCE.", duration: 2000 },
   { text: "Ke UKOM.", duration: 2000 },
-  { text: "Aku bakal dukung dari jauh. ❤️", duration: 4000 }
+  { text: "Aku bakal dukung dari jauh.", duration: 4000 }
 ];
 
 export default function ClarificationScene() {
