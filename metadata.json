@@ -1,0 +1,6 @@
+{
+  "name": "Project Aurora",
+  "description": "An elegant, cinematic digital letter of encouragement for Annisa, styled with custom interactive night-sky elements, a dynamic timeline of her milestones, and soft, immersive ambient music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
