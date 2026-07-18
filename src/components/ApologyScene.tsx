@@ -50,7 +50,7 @@ export default function ApologyScene({ isForgiven, setIsForgiven }: ApologyScene
                 Pesan Penting 💌
               </span>
               <h3 className="font-serif text-2xl md:text-3xl text-white font-medium leading-relaxed">
-                Anisa, maafin aku soal obrolan semalem ya? 🥺
+                Hai, maafin aku soal obrolan semalem ya?
               </h3>
               <p className="font-sans text-sm text-[#8EC5FF]/80 leading-relaxed max-w-xs mx-auto">
                 Aku bener-bener minta maaf. Tolong dimaafin yaaa...
